@@ -11,8 +11,7 @@ my $w = EV::periodic 0, 2, 0, sub {
 	rewinddir DIR;
 	for my $less(@styles) {
 		open STLESS => "<$less";
-			my $buffer = '';
-			$buffer .= $_ for <STLESS>;
+			my $buffer = do { local $/ ; <STLESS>};
 		close STLESS;
 		$less =~s/less/css/gi;
 		open STCSS => ">$less";
