@@ -1,0 +1,16 @@
+Perl LESS Watcher
+
+Based on CSS::LESSp;
+
+Description:
+Auto *.less in *.css compiler as simple perl-script. Copy script in styles directory, run and start working.
+
+Warnings:
+Script only works with existing files in directory. If you create a new less-styles - restart watcher manually.
+
+System requirements:
+* PERL 5
+* CSS::LESSp ( http://search.cpan.org/~drinchev/CSS-LESSp-0.86/lib/CSS/LESSp.pm )
+	cpan install CSS::LESSp
+* EV ( http://search.cpan.org/dist/EV/EV.pm )
+	cpan install EV
