@@ -5,6 +5,12 @@ Based on CSS::LESSp;
 Description:
 Auto *.less in *.css compiler as simple perl-script. Copy script in styles directory, run and start working.
 
+Features:
+* Periodic (every 2 sec) automatic compilations.
+* Not processor overloading (very low %, or even zero).
+* Dont use extra resources of your PC.
+	e.g.: SimpLESS using 25-35 mb of your RAM, WTF?
+
 Warnings:
 Script only works with existing files in directory. If you create a new less-styles - restart watcher manually.
 
