@@ -5,6 +5,10 @@ Based on CSS::LESSp;
 Description:
 Auto *.less in *.css compiler as simple perl-script. Copy script in styles directory, run and start working.
 
+Complect:
+1. lesswatcher.pl - Watcher edition (no compress, no CSS::Packer needed)
+2. lesscompressor.pl - Compressor edition (watch & compile & compress)
+
 Features:
 * Periodic (every 2 sec) automatic compilations.
 * Not processor overloading (very low %, or even zero).
@@ -20,3 +24,5 @@ System requirements:
 	cpan install CSS::LESSp
 * EV ( http://search.cpan.org/dist/EV/EV.pm )
 	cpan install EV
+** CSS::Packer needed for compressor-edition only (if using)
+	cpan install CSS::Packer
